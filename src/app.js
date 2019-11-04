@@ -1,6 +1,5 @@
 const path = require('path')
 const express = require('express')
-const notes = require('../../notes-app/notes.json')
 const hbs = require('hbs')
 const app = express()
 const geocode = require('./utils/geocode')
