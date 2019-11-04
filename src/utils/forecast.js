@@ -11,9 +11,10 @@ const forecast = (latitude, longitude, callback) =>{
         else {
             debugger
             const time = moment().format((data.time,"dddd, MMMM Do YYYY, h:mm:ss a"))
-            callback(undefined,`it is currently ${data.temperature} degrees out. There is a ${data.precipProbability}% chance of rain.` && `\n` && `${time}` )
+            callback(undefined,`it is currently ${data.temperature} degrees out. There is a ${data.precipProbability}% chance of rain.${time}` )
+            
         }
-    })
+    })  
 }
 
 module.exports = forecast
